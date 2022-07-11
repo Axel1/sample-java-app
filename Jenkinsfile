@@ -1,5 +1,4 @@
 pipeline {
-
     agent any
 
     stages {
@@ -7,7 +6,6 @@ pipeline {
         stage('Build'){
             steps {
                 sh "mvn clean"
-
                 sh "mvn compile"
             }
         }
@@ -36,7 +34,5 @@ pipeline {
                 }
             }
         }
-
     }
-
-}
+} 
